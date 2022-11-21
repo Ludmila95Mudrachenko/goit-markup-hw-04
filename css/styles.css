@@ -132,11 +132,12 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 background-position: center;   
 background-repeat: no-repeat;
 background-color: #2F303A;
+margin: 0 auto;
+
 text-align: center;
 padding-top: 200px;
 padding-bottom: 200px;  
 max-width: 1600px;
-height: 600px;
 background-size: cover;
 }
 .text-hero {
@@ -203,7 +204,8 @@ border: transparent;
 cursor: pointer;
 }
 .pointer-btn .btn:active,
-.pointer-btn .btn:hover {
+.pointer-btn .btn:hover,
+.pointer-btn .btn:focus {
 background: #2196F3;
 color: #FFFFFF;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -506,23 +508,21 @@ width: 170px;
 height: 92px;
 border: 1px solid #AFB1B8;
 border-radius: 4px;
-fill: currentColor;
-fill: #AFB1B8;
+color: #AFB1B8;
 }
 
 .button-icon {
+fill: currentColor;
 width: 160px;
 height: 60px;
 }
 
-.icon-link .button-icon:hover,
-.icon-link .button-icon:focus {
-fill: #2196F3;
-}
+
 
 .icon-link:hover,
 .icon-link:focus {
-border: 1px solid #2196F3   
+border: 1px solid #2196F3;
+color: #2196F3;  
 }
 
 
@@ -560,7 +560,10 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 }
-        
+.footer-backgroud .address:hover,
+.footer-backgroud .address:focus {
+color: #2196F3;   
+}        
 .contact {
 color: rgba(255, 255, 255, 0.6);
 font-style: normal;
@@ -569,8 +572,10 @@ font-size: 14px;
 line-height: 1.71;
 }
 
-.contact:hover {
-color: #FFFFFF;
+.contact:hover,
+.contact:focus {
+color: #2196F3;
+
 }
     
 .general {
